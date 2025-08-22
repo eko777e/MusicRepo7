@@ -1,12 +1,10 @@
+
 from typing import Union
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from InflexMusic import app
 
 
 def help_pannel(_, START: Union[bool, int] = None):
-    """
-    Help panel düymələri
-    """
     first = [
         InlineKeyboardButton(
             text=_.get("CLOSEMENU_BUTTON", "❌ Menyu bağla"),
@@ -69,15 +67,12 @@ def help_pannel(_, START: Union[bool, int] = None):
 
 
 def help_back_markup(_):
-    """
-    Geri düyməsi kliklənəndə istifadə ediləcək ana menyu düymələri
-    """
     return InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    text=_.get("START_BUTTON", "🏠 Ana menyu"),
-                    callback_data="start_panel"
+                    text=_.get("BACK_BUTTON", "⬅️ Geri"),
+                    callback_data="settings_back_helper"
                 ),
                 InlineKeyboardButton(
                     text=_.get("CLOSE_BUTTON", "❌ Bağla"),
@@ -89,49 +84,11 @@ def help_back_markup(_):
 
 
 def private_help_panel(_):
-    """
-    Private / şəxsi yardım paneli düymələri
-    """
-    return InlineKeyboardMarkup(
+    return [
         [
-            [
-                InlineKeyboardButton(
-                    text=_.get("PRIVATE_HELP_1", "🔒 Şəxsi yardım"),
-                    callback_data="private_help_1"
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text=_.get("CLOSEMENU_BUTTON", "❌ Bağla"),
-                    callback_data="close"
-                )
-            ]
-        ]
-    )
-
-
-# Callback handler nümunəsi (Pyrogram)
-@app.on_callback_query()
-async def cb_handler(client, callback_query):
-    data = callback_query.data
-    if data == "help_back":
-        # Geri düyməsinə basanda start panelinə keç
-        await callback_query.message.edit_text(
-            text="🏠 Ana menyu",
-            reply_markup=help_back_markup(_)
-        )
-        await callback_query.answer()
-    elif data == "start_panel":
-        # Ana menyudan düymə kliklənəndə
-        await callback_query.message.edit_text(
-            text="🏠 Ana menyu",
-            reply_markup=None
-        )
-        await callback_query.answer()
-    elif data == "private_help_1":
-        # Private yardım düyməsi kliklənəndə
-        await callback_query.message.edit_text(
-            text="🔒 Şəxsi yardım məlumatları",
-            reply_markup=help_back_markup(_)
-        )
-        await callback_query.answer()
+            InlineKeyboardButton(
+                text=_.get("S_B_1", "📚 Kömək al"),
+                url=f"https://t.me/{app.username}?start=help",
+            ),
+        ],
+    ]
