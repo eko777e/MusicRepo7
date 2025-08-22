@@ -13,10 +13,6 @@ def help_pannel(_, START: Union[bool, int] = None):
     ]
     second = [
         InlineKeyboardButton(
-            text=_.get("BACK_BUTTON", "⬅️ Geri"),
-            callback_data="help_back",
-        ),
-        InlineKeyboardButton(
             text=_.get("CLOSEMENU_BUTTON", "❌ Menyu bağla"),
             callback_data="close"
         ),
@@ -58,7 +54,7 @@ def help_pannel(_, START: Union[bool, int] = None):
                 ),
                 InlineKeyboardButton(
                     text=_.get("H_B_6", "💡 İpuçları"),
-                    callback_data="help_callback hb5",
+                    callback_data="help_callback hb6",
                 ),
             ],
             mark,
@@ -70,6 +66,10 @@ def help_back_markup(_):
     return InlineKeyboardMarkup(
         [
             [
+                InlineKeyboardButton(
+                    text=_.get("BACK_BUTTON", "⬅️ Geri"),
+                    callback_data="settings_back_helper"
+                ),
                 InlineKeyboardButton(
                     text=_.get("CLOSE_BUTTON", "❌ Bağla"),
                     callback_data="close"
