@@ -131,7 +131,7 @@ cplay_5: "Yalnız kanallar dəstəklənir."
 cplay_6: "» {0} kanalını bağlamaq üçün kanal sahibi olmalısınız.\n<b>Kanal Sahibi:</b> @{1}\n\nAlternativ olaraq, qrupunuzu həmin kanala bağlaya və sonra <code>/channelplay linked</code> əmri ilə cəhd edə bilərsiniz."
 cplay_7: "» Kanal oynatma deaktiv edildi."
 
-play_1: "<b>Sorğunuz emal olunur.... VibeX Music Xidmətinizdədir⭐</b>"
+play_1: "<b>Sorğunuz emal olunur.... Məlodiya qidasını yaşat #Respublic 🇦🇿</b>"
 play_2: "<b>➻ Kanal İfa Rejimi</b>\n\nİşlənir, zəhmət olmasa gözləyin...\n\n<b>Əlaqəli Kanal:</b> {0}"
 play_3: "» İşləmə zamanı xəta baş verdi."
 play_4: "<b>Yalnız Administratorlar üçün İfa</b>\nBu söhbətin adminlərinə yalnız ifa icazəsi verilib\n\n/playmode ilə ifa rejimini dəyişə bilərsiniz"
@@ -140,7 +140,7 @@ play_6: "» Axın {0} dəqiqədən uzun ola bilməz."
 play_7: "» Yanlış video fayl uzantısı.\n\n<b>Dəstəklənən Uzantılar:</b> {0}"
 play_8: "» Video faylının ölçüsü 1GB-dən az olmalıdır."
 play_9: "<b><u>YouTube İfa Siyahısı Xüsusiyyəti</u></b>\n\nYouTube ifa siyahısını hansı rejimdə oynatmaq istədiyinizi seçin."
-play_10: "<b>🎶 Başlıq:</b> {0}\n<b>⌛ Müddət:</b> {1}"
+play_10: "<b>⚜️ Başlıq:</b> {0}\n<b>⌛ Müddət:</b> {1}"
 play_11: "<u><b>{0} Spotify İfaçısı</b></u>\n\nİstək Sahibi: {1}"
 play_12: "<u><b>{0} Apple İfaçısı</b></u>\n\nİstək Sahibi: {1}"
 play_13: "» Canlı yayım aşkarlandı.\n\nBu kanalda canlı yayım oynatmaq istədiyinizə əminsiniz?"
@@ -309,6 +309,7 @@ gban_10: "» Heç bir istifadəçi bot tərəfindən ümumi qadağan olunmayıb.
 gban_11: "» Ümumi qadağan olunmuş istifadəçilər siyahısı yüklənir..."
 gban_12: "<b>Ümumi Qadağan Olunmuş İstifadəçilər:</b>\n\n"
 #--------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
