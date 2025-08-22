@@ -24,7 +24,7 @@
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "7933792528:AAEF6h9eO0jW7_qrqgsMcCchm4i164lf_38",
+        "value": "8419643419:AAHZUyXo4sCHwgIsvPCPfJLsxDJXGjcR92I",
         "required": true
       },
       "MONGO_DB_URI": {
@@ -39,7 +39,7 @@
       },
       "STRING_SESSION": {
         "description": "A Pyrogram v2 String Session .",
-        "value": "AgFwyZ4APlnQCXvM7m6v4wnEV7Nye_9EP0ONvI164fM5vBfndOcxYDHsDWtz8HVmker0OzUWLjTwlFaUQjY4mH6zgNT_yMPdHBqIv7bN7eO1B5pFkOOxfrMKRnuRpruisgsJWgy4efHkbZrJFoQh_l8fFRYEp3XlYDDpGwUIWgmLOK7EQ5H-f4l5CP0EkHSXxOf2gAvpvuud2eJXBk2Mvy_5wryM_IgJB8VfMs33DNPJ9Qm2q8u4J5QvVqG1g9j7n76OOkev1o_aUXoEe9lqM5lZ3YU4eTijSkECUEi2RVI5B-OxYVi9Szh-LHBY61_Yva9BvjG_o60aQcIeHWUrHbB07iR4swAAAAGGg0BgAA",
+        "value": "AgFwyZ4AEes2inGwrshEhkT3KNIK5gsQfMZoD_jbYkTPG05olLP8b6ODiCt5aZuYwxXk6RDwczYbIDuAvPcEQ6XCmIbM8uGZ0CwTCRMzcK4d7tl2BXl-TuYelWacLl6X6pvmMiHcttWqFFPGuSHhHYYTUE_g0ZV60Vzb3YyRjvhhw-sAkrZvtrspA8mY4NVqSHe67TRCsyvxYDx2cLmOHN2l1LY6wPX4Zan3dD5rEqunuRaHFug91SM031N6zBi7Ip_gpVbvB-DNSWHLbvJ1LJKeFNNenNs7bHmY9lT11_TNESSZLqE7_T-C1sqbVs9Fm1pqF_wc10kYGF4_K3IlrOB7csQnzQAAAAHYehgCAA-f4l5CP0EkHSXxOf2gAvpvuud2eJXBk2Mvy_5wryM_IgJB8VfMs33DNPJ9Qm2q8u4J5QvVqG1g9j7n76OOkev1o_aUXoEe9lqM5lZ3YU4eTijSkECUEi2RVI5B-OxYVi9Szh-LHBY61_Yva9BvjG_o60aQcIeHWUrHbB07iR4swAAAAGGg0BgAA",
         "required": true
       },
       "QUEUE_LIMIT": {
@@ -59,7 +59,7 @@
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Do not ever try to put channel ID here.",
-        "value": "-1002624123610",
+        "value": "-1003074350070",
         "required": true
       }
     },
@@ -76,6 +76,7 @@
       ],
       "stack": "container"
   }
+
 
 
 
