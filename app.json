@@ -1,8 +1,8 @@
 {
-    "name": "Inflex Music Bot",
-    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://graph.org/file/d6a63fe91240f0b271f7f.jpg",
-    "keywords": [
+  "name": "Inflex Music Bot",
+  "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+  "logo": "https://graph.org/file/d6a63fe91240f0b271f7f.jpg",
+  "keywords": [
     "python3",
     "telegram",
     "bot",
@@ -10,77 +10,69 @@
     "MusicBot",
     "telegram-bot",
     "pyrogram"
-    ],
-    "env": {
-      "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "23470912",
-        "required": true
-      },
-      "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "33ac02b7891c5396e6b305802d56cf4f",
-        "required": true
-      },
-      "BOT_TOKEN": {
-        "description": "A Bot's token from Botfather",
-        "value": "8382974250:AAH_a5eYKz_V-BGzaMKw9pkwfl911nmPMyw",
-        "required": true
-      },
-      "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com.",
-        "value": "mongodb+srv://TEAMBABY01:UTTAMRATHORE09@cluster0.vmjl9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-        "required": true
-      },
-      "OWNER_ID": {
-        "description": "The user id of user whom you would like to add as OWNER.",
-        "value": "8132426159",
-        "required": true
-      },
-      "STRING_SESSION": {
-        "description": "A Pyrogram v2 String Session .",
-        "value": "AQFwyZ4AWijLgKMQErPErte6JEXWE8yI3wZlO2yaz7uKrO6PU5DjsmTOOOS_S1Cm5eUEZPkVNDeoEu6vmyiNJFSNrGuvl5eIpZGNGHcPbyDGNb9I03U_6O3aqEfxYM_bKWDAzLQJL78hMAyXw0AallyOz8ZI5O8yfdZ72vbd-42cpQA6t4Uyoy1cZ7OzJPzANkEBeQz3gveQvnqFtZal_Aks6N1SPbL1MD04ZLXJTFIG6WILfuG8GdVeEFqYLBbzKMXdK3B4nNJoPaERfAppbL2iHCnwL0pjeQjJGkxsEJZThEwhMu3HVZELZOjYBsmpSaI8KJ4cEcpTL6ECcI9VvAU4VFW_XwAAAAHonw_oAA",
-        "required": true
-      },
-      "QUEUE_LIMIT": 
-        "description": "Fill Queue Limit . Example - 15",
-        "value": "15",
-        "required": false
-      },
-      "HEROKU_API_KEY": {
-        "description": "Your Heroku account's API key",
-        "value": "HRKU-AAwNu2aaHv0TKXSUaUJ6gxk_XODl79TyKs0giLl-RsFQ_wx11gGHU63r",
-        "required": false
-      },
-      "HEROKU_APP_NAME": {
-        "description": "Your heroku app name",
-        "value": "music",
-        "required": false
-      },
-      "LOG_GROUP_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Do not ever try to put channel ID here.",
-        "value": "-1002820684247",
-        "required": true
-      }
+  ],
+  "env": {
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "23470912",
+      "required": true
     },
-    "buildpacks": [
-          {
-              "url": "heroku/python"
-          },
-          {
-              "url": "heroku/nodejs"
-          },
-          {
-              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-          }
-      ],
-      "stack": "container"
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "33ac02b7891c5396e6b305802d56cf4f",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "A Bot's token from Botfather",
+      "value": "8382974250:AAH_a5eYKz_V-BGzaMKw9pkwfl911nmPMyw",
+      "required": true
+    },
+    "MONGO_DB_URI": {
+      "description": "Get a mongodb url from https://cloud.mongodb.com.",
+      "value": "mongodb+srv://TEAMBABY01:UTTAMRATHORE09@cluster0.vmjl9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "The user id of user whom you would like to add as OWNER.",
+      "value": "8382974250",
+      "required": true
+    },
+    "STRING_SESSION": {
+      "description": "A Pyrogram v2 String Session.",
+      "value": "AQFwyZ4AWijLgKMQErPErte6JEXWE8yI3wZlO2yaz7uKrO6PU5DjsmTOOOS_S1Cm5eUEZPkVNDeoEu6vmyiNJFSNrGuvl5eIpZGNGHcPbyDGNb9I03U_6O3aqEfxYM_bKWDAzLQJL78hMAyXw0AallyOz8ZI5O8yfdZ72vbd-42cpQA6t4Uyoy1cZ7OzJPzANkEBeQz3gveQvnqFtZal_Aks6N1SPbL1MD04ZLXJTFIG6WILfuG8GdVeEFqYLBbzKMXdK3B4nNJoPaERfAppbL2iHCnwL0pjeQjJGkxsEJZThEwhMu3HVZELZOjYBsmpSaI8KJ4cEcpTL6ECcI9VvAU4VFW_XwAAAAHonw_oAA",
+      "required": true
+    },
+    "QUEUE_LIMIT": {
+      "description": "Fill Queue Limit. Example - 15",
+      "value": "15",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "Your Heroku account's API key",
+      "value": "HRKU-AAwNu2aaHv0TKXSUaUJ6gxk_XODl79TyKs0giLl-RsFQ_wx11gGHU63r",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Your heroku app name",
+      "value": "music",
+      "required": false
+    },
+    "LOG_GROUP_ID": {
+      "description": "Your Log Group ID, add your bot and promote as an admin with full rights! Do not ever try to put channel ID here.",
+      "value": "-1002820684247",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+  "stack": "container"
   }
-
-
-
-
-
-
-
-
