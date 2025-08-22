@@ -16,7 +16,7 @@ def start_panel(_):
 def private_panel(_):
     buttons = [
         [
-            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHANNEL)
+            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHANNEL),
             InlineKeyboardButton(text=_["S_B_13"], url=config.SUPPORT_GROUP),
         ],
         [  
