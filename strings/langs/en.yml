@@ -81,7 +81,7 @@ admin_39: "» 1 səs silindi."
 admin_40: "Səs verildi."
 
 start_1: "<b>{0} Bot Mükəmməl işləyir ✅</b>"
-start_2: "<b>{0} Salam 👋🏻</b>\n\n<b>Mənim adım {1}</b>\n<b>Məni qrupunuza əlavə edərək səsli söhbətdə musiqi dinləyə bilərsiniz ✨🎶</b>\n© ||Kurucu @Mastanoff||"
+start_2: "Salam, mən {1} 🥀.\n\n➻ Mən faydalı xüsusiyyətləri olan Telegram axın botuyam.\n\nDəstəklənən platformalar: YouTube, Spotify, SoundCloud və s.\n\nMəni qrupunuza rahatlıqla əlavə edə bilərsiniz."
 start_3: "<b>{0} Salam 👋🏻</b>\n<b>Məni {2} qrupuna əlavə etdiyiniz üçün təşəkkür edirəm. ❤️</b>\n\n<b>{1} xidmətinizdədir. 👾</b>"
 start_4: "<b>Super Qrup Tələb Olunur</b>\n\nZəhmət olmasa <b>qrupunuzu</b> <b>super qrupa</b> çevirin və sonra məni yenidən əlavə edin.\n\n<b>Super Qrup Necə Yaradılır?</b>\n- Qrupunuzun söhbət tarixçəsini <b>Görünən</b> edin."
 start_5: "<b>↝ Bloklanmış Söhbət ↜</b>\n\nBu söhbət {0} verilənlər bazasında bloklanıb.\nSöhbətinizin blokdan çıxarılması üçün <a href={1}>sudo istifadəçisinə</a> və ya <a href={2}>dəstək söhbətinə</a> müraciət edin."
@@ -310,6 +310,7 @@ gban_10: "» Heç bir istifadəçi bot tərəfindən ümumi qadağan olunmayıb.
 gban_11: "» Ümumi qadağan olunmuş istifadəçilər siyahısı yüklənir..."
 gban_12: "<b>Ümumi Qadağan Olunmuş İstifadəçilər:</b>\n\n"
 #--------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
