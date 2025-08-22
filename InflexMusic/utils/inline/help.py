@@ -88,6 +88,28 @@ def help_back_markup(_):
     )
 
 
+def private_help_panel(_):
+    """
+    Private / şəxsi yardım paneli düymələri
+    """
+    return InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(
+                    text=_.get("PRIVATE_HELP_1", "🔒 Şəxsi yardım"),
+                    callback_data="private_help_1"
+                )
+            ],
+            [
+                InlineKeyboardButton(
+                    text=_.get("CLOSEMENU_BUTTON", "❌ Bağla"),
+                    callback_data="close"
+                )
+            ]
+        ]
+    )
+
+
 # Callback handler nümunəsi (Pyrogram)
 @app.on_callback_query()
 async def cb_handler(client, callback_query):
@@ -95,14 +117,21 @@ async def cb_handler(client, callback_query):
     if data == "help_back":
         # Geri düyməsinə basanda start panelinə keç
         await callback_query.message.edit_text(
-            text="🏠 Ana menyu",  # Start mesajı şəkilsiz
+            text="🏠 Ana menyu",
             reply_markup=help_back_markup(_)
         )
         await callback_query.answer()
     elif data == "start_panel":
-        # Ana menyudan düymə kliklənəndə lazım gələrsə
+        # Ana menyudan düymə kliklənəndə
         await callback_query.message.edit_text(
-            text="🏠 Ana menyu",  # Start mesajı
-            reply_markup=None  # Burada istəsən start panel düymələrini əlavə edə bilərsən
+            text="🏠 Ana menyu",
+            reply_markup=None
+        )
+        await callback_query.answer()
+    elif data == "private_help_1":
+        # Private yardım düyməsi kliklənəndə
+        await callback_query.message.edit_text(
+            text="🔒 Şəxsi yardım məlumatları",
+            reply_markup=help_back_markup(_)
         )
         await callback_query.answer()
