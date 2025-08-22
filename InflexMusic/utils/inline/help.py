@@ -71,10 +71,6 @@ def help_back_markup(_):
         [
             [
                 InlineKeyboardButton(
-                    text=_.get("BACK_BUTTON", "⬅️ Geri"),
-                    callback_data="settings_back_helper"
-                ),
-                InlineKeyboardButton(
                     text=_.get("CLOSE_BUTTON", "❌ Bağla"),
                     callback_data="close"
                 ),
