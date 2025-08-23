@@ -131,7 +131,7 @@ cplay_5: "Yalnız kanallar dəstəklənir."
 cplay_6: "» {0} kanalını bağlamaq üçün kanal sahibi olmalısınız.\n<b>Kanal Sahibi:</b> @{1}\n\nAlternativ olaraq, qrupunuzu həmin kanala bağlaya və sonra <code>/channelplay linked</code> əmri ilə cəhd edə bilərsiniz."
 cplay_7: "» Kanal oynatma deaktiv edildi."
 
-play_1: "<b>Sorğunuz emal olunur....</b>\n<b>#Respublic 🇦🇿 </b>"
+play_1: "𝐒𝐨𝐫ğ𝐮𝐧𝐮𝐳 𝐞𝐦𝐚𝐥 𝐨𝐥𝐮𝐧𝐮𝐫 𝐙ə𝐡𝐦ə𝐭 𝐨𝐥𝐦𝐚𝐬𝐚 𝐒𝐢𝐧𝐛𝐚 𝐌𝐮𝐬𝐢𝐜𝐢 𝐠ö𝐳𝐥ə... 🩵"
 play_2: "<b>➻ Kanal İfa Rejimi</b>\n\nİşlənir, zəhmət olmasa gözləyin...\n\n<b>Əlaqəli Kanal:</b> {0}"
 play_3: "» İşləmə zamanı xəta baş verdi."
 play_4: "<b>Yalnız Administratorlar üçün İfa</b>\nBu söhbətin adminlərinə yalnız ifa icazəsi verilib\n\n/playmode ilə ifa rejimini dəyişə bilərsiniz"
@@ -310,6 +310,7 @@ gban_10: "» Heç bir istifadəçi bot tərəfindən ümumi qadağan olunmayıb.
 gban_11: "» Ümumi qadağan olunmuş istifadəçilər siyahısı yüklənir..."
 gban_12: "<b>Ümumi Qadağan Olunmuş İstifadəçilər:</b>\n\n"
 #--------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
