@@ -1,4 +1,4 @@
-FROM nikolaik/python-nodejs:python3.10-nodejs19
+FROM nikolaik/python-nodejs:python3.10-nodejs192
 
 # Arxiv repoları əlavə olunur
 RUN sed -i 's|http://deb.debian.org/debian|http://archive.debian.org/debian|g' /etc/apt/sources.list && \
@@ -13,6 +13,7 @@ WORKDIR /app/
 RUN pip3 install --no-cache-dir -U -r requirements.txt
 
 CMD ["bash", "start", "m", "mstart"]
+
 
 
 
