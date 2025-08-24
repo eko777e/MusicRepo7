@@ -2,7 +2,6 @@ import config
 import math
 
 from pyrogram.types import InlineKeyboardButton
-
 from InflexMusic.utils.formatters import time_to_seconds
 
 
@@ -32,27 +31,9 @@ def stream_markup_timer(_, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
-    umm = math.floor(percentage)
-    if 0 < umm <= 10:
-        bar = "─➤─────────"
-    elif 10 < umm < 20:
-        bar = "──➤────────"
-    elif 20 <= umm < 30:
-        bar = "───➤───────"
-    elif 30 <= umm < 40:
-        bar = "────➤──────"
-    elif 40 <= umm < 50:
-        bar = "─────➤─────"
-    elif 50 <= umm < 60:
-        bar = "──────➤────"
-    elif 60 <= umm < 70:
-        bar = "───────➤───"
-    elif 70 <= umm < 80:
-        bar = "────────➤──"
-    elif 80 <= umm < 95:
-        bar = "─────────➤─"
-    else:
-        bar = "──────────➤"
+    filled = math.floor(percentage / 10)  # neçə blok dolacaq
+    bar = "▰" * filled + "▱" * (10 - filled)  # dinamik bar
+
     buttons = [
         [
             InlineKeyboardButton(
@@ -61,9 +42,9 @@ def stream_markup_timer(_, chat_id, played, dur):
             )
         ],
         [
-            InlineKeyboardButton(text=_["S_B_5"], url=config.OWNER_NAME),
-            InlineKeyboardButton(text=_["S_B_7"], url=config.SUPPORT_GROUP)
-        ],         
+            InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
+            InlineKeyboardButton(text=_["S_B_14"], url=config.ELCAN_GROUP)
+        ],
         [
             InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
         ],
@@ -111,9 +92,9 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
             ),
         ],
         [
-            InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
+            InlineKeyboardButton(text=_["S_B_13"], url=config.SUPPORT_GROUP),
             InlineKeyboardButton(text=_["S_B_14"], url=config.ELCAN_GROUP)
-        ],         
+        ],
         [
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
